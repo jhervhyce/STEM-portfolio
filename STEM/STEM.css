@@ -1,0 +1,130 @@
+/* stem-styles.css - Dedicated styling for STEM Project page */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a1a2a; /* Darker blue-black background */
+  margin: 0;
+  padding: 20px;
+  color: #e0e7f1; /* Lighter cool gray */
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #c7dafc;
+  text-align: center;
+  text-shadow: 0 0 10px #007bffaa;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  color: #5ddcff; /* Electric blue for focus */
+  text-shadow: 0 0 6px #5ddcffaa;
+  border-bottom: 1px solid #004a8f;
+  padding-bottom: 10px;
+}
+
+/* Specialized STEM Layouts */
+.stem-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-content {
+  background: #16213e; /* Slightly lighter card background */
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* --- TABLE OF CONTENTS STYLING --- */
+.toc-container {
+  background: #ffffff; /* White background */
+  color: #000000;       /* Black text */
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.toc-container h2 {
+  color: #000000;       /* Black heading */
+  border-bottom: 2px solid #005aab;
+}
+
+.toc-container ul {
+  list-style-type: disc; /* Ensure bullets are visible */
+}
+
+.toc-container ul li {
+  color: #000000;       /* Black bullets */
+  margin-bottom: 10px;
+}
+
+.toc-container a {
+  color: #005aab;       /* Blue links */
+  text-decoration: none;
+  font-weight: bold;
+}
+/* ------------------------------------------- */
+
+.stem-project-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.stem-project-images img {
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #005aab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.stem-project-images img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #007bff88;
+}
+
+/* --- DOCUMENT VIEWERS --- */
+.doc-viewer-container {
+  background: #ffffff; /* White background for the document area */
+  padding: 10px;        /* Padding around the iframe */
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  height: 520px;       /* Set height to hold iframe */
+  overflow: hidden;    /* Important: Prevents container from scrolling, only iframe scrolls */
+}
+/* --------------------------------- */
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #7a9edc;
+  font-size: 0.9em;
+  border-top: 1px solid #004a8f;
+  padding-top: 20px;
+}
+/* Add this to STEM.css */
+.stem-project-images img {
+  width: 100%;
+  max-width: 400px; /* Limits size on large screens */
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #005aab;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
