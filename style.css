@@ -66,43 +66,50 @@ h2 {
   font-weight: bold;
 }
 
-.stem-project-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 30px;
+.final-product-container {
+  background: #16213e; 
+  padding: 40px 20px; /* Added more vertical padding */
+  border-radius: 12px;
+  margin: 30px auto; /* Centers the container itself */
+  max-width: 1000px;  /* Limits the width for better readability */
+  text-align: center; /* Centers the image and title */
+  border: 1px solid #004a8f;
 }
 
-.stem-project-images img {
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  border: 2px solid #005aab;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.final-product-img {
+  display: block;
+  margin: 0 auto;    /* The key to centering a block-level image */
   width: 100%;
-  max-width: 400px;
+  max-width: 850px; 
   height: auto;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #5ddcff; 
+  box-shadow: 0 0 20px rgba(93, 220, 255, 0.2);
 }
 
-.stem-project-images img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px #007bff88;
+.product-description {
+  margin: 25px auto 0 auto; /* Centers the text block */
+  color: #e0e7f1;
+  font-size: 1.1em;
+  text-align: center; /* Centers the actual text lines */
+  max-width: 800px;
+  line-height: 1.8;
 }
 
 .doc-viewer-container {
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  height: 520px;
-  overflow: hidden;
+    background-color: #000000; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #004a8f; 
 }
 
+.doc-viewer-container iframe {
+    border: none;
+    background-color: #000000;
+}
 .footer {
   margin-top: 60px;
   text-align: center;
